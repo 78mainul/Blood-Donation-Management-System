@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bloodforlife.RegisterController">
+   <children>
+      <TextField fx:id="nameField" layoutX="14.0" layoutY="50.0" promptText="Enter name" />
+      <TextField fx:id="contactField" layoutX="24.0" layoutY="200.0" promptText="Number" />
+      <TextField fx:id="bloodGroupField" layoutX="24.0" layoutY="127.0" promptText="Blood Group" />
+      <TextField fx:id="emailField" layoutX="24.0" layoutY="89.0" promptText="Email" />
+      <TextField fx:id="passwordField" layoutX="24.0" layoutY="167.0" promptText="Password" />
+      <Button layoutX="24.0" layoutY="242.0" mnemonicParsing="false" onAction="#handleRegister" text="Submit" />
+   </children>
+</AnchorPane>
