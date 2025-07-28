@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bloodforlife.RegisterController">
+   <children>
+      <TextField fx:id="nameField" layoutX="405.0" layoutY="99.0" promptText="Enter name" />
+      <TextField fx:id="contactField" layoutX="405.0" layoutY="145.0" promptText="Number" />
+      <TextField fx:id="bloodGroupField" layoutX="405.0" layoutY="187.0" promptText="Blood Group" />
+      <TextField fx:id="emailField" layoutX="405.0" layoutY="230.0" promptText="Email" />
+      <Button layoutX="453.0" layoutY="317.0" mnemonicParsing="false" onAction="#handleRegister" text="Submit" />
+      <PasswordField fx:id="passwordField" layoutX="405.0" layoutY="272.0" promptText="Password" />
+      <AnchorPane prefHeight="400.0" prefWidth="317.0" style="-fx-background-color: #FF0000;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="84.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/Loa%20(6).png" />
+               </image>
+            </ImageView>
+            <Label fx:id="labeltitel" layoutX="50.0" layoutY="34.0" prefHeight="34.0" prefWidth="217.0" text="Blood Donor Finder" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelcredit" layoutX="74.0" layoutY="338.0" prefHeight="34.0" prefWidth="169.0" text="Developed By Mainul" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label fx:id="labelreg" layoutX="423.0" layoutY="52.0" prefHeight="26.0" prefWidth="113.0" text="Register Here">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Hyperlink layoutX="450.0" layoutY="362.0" text="Hyperlink" />
+   </children>
+</AnchorPane>

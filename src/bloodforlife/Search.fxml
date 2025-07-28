@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="403.0" prefWidth="610.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bloodforlife.SearchController">
+   <children>
+      <AnchorPane prefHeight="403.0" prefWidth="307.0" style="-fx-background-color: #008000;">
+         <children>
+            <Button layoutX="28.0" layoutY="234.0" mnemonicParsing="false" onAction="#handleSearch" text="Search" />
+            <ImageView fitHeight="69.0" fitWidth="82.0" layoutX="14.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/Loa%20(6).png" />
+               </image>
+            </ImageView>
+            <Label fx:id="searchlabel" layoutX="28.0" layoutY="160.0" prefHeight="21.0" prefWidth="149.0" text="Search Donor Here" textFill="WHITE">
+               <font>
+                  <Font name="Arial Narrow Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="blooddonorlable" layoutX="94.0" layoutY="34.0" prefHeight="29.0" prefWidth="191.0" text="Blood Donor Finder" textFill="WHITE">
+               <font>
+                  <Font name="Arial Narrow Bold" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="homebtn" layoutX="28.0" layoutY="347.0" mnemonicParsing="false" onAction="#handleHomeButton" text="Home" />
+            <ComboBox fx:id="bloodGroupCombo" layoutX="102.0" layoutY="234.0" onAction="#handleSearch" prefWidth="150.0" promptText="Select Blood Group" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tableView" layoutX="310.0" layoutY="108.0" prefHeight="278.0" prefWidth="285.0">
+        <columns>
+          <TableColumn fx:id="nameCol" prefWidth="75.0" text="Name" />
+            <TableColumn fx:id="contactCol" prefWidth="75.0" text="Contact" />
+          <TableColumn fx:id="emailCol" prefWidth="75.0" text="Email" />
+            <TableColumn fx:id="habitlCol" prefWidth="75.0" text="Habit" />
+        </columns>
+      </TableView>
+      <Label fx:id="detailslabel" layoutX="413.0" layoutY="63.0" prefHeight="21.0" prefWidth="98.0" text="Donor Details">
+         <font>
+            <Font name="Arial Narrow Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
